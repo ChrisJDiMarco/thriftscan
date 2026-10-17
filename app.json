@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "ThriftScan",
+    "slug": "thriftscan",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "thriftscan",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.jarvis.thriftscan",
+      "infoPlist": {
+        "NSCameraUsageDescription": "ThriftScan uses the camera to photograph garments and neck tags for appraisal."
+      }
+    },
+    "android": {
+      "package": "com.jarvis.thriftscan",
+      "permissions": [
+        "CAMERA"
+      ]
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single"
+    },
+    "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Select garment and neck tag photos for appraisal.",
+          "cameraPermission": "Take garment and neck tag photos for appraisal."
+        }
+      ]
+    ]
+  }
+}
